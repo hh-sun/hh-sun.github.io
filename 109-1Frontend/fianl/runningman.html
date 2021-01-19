@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running man</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <!-- <link async="" href="http://fonts.googleapis.com/css?family=Baumans" data-generated="http://enjoycss.com"
+        rel="stylesheet" type="text/css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+
+</head>
+
+<body id="body">
+
+    <div id="worldBorder" style="display:none">
+
+        <div id="world" style="display: none;">
+            <div class="row">
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="row">
+                    <div class="path"></div>
+                    <div class="path"></div>
+                    <div class="path"></div>
+                    <div class="path"></div>
+                    <div class="path"></div>
+                    <div class="path"></div>
+                    <div class="path"></div>
+                    <div class="brick"></div>
+                    <div class="brick"></div>
+                    <div class="path"></div>
+                    <div class="path"></div>
+                    <div class="brick"></div>
+                    <div class="brick"></div>
+                    <div class="path"></div>
+                    <div class="path"></div>
+                    <div class="path"></div>
+                    <div class="path"></div>
+                    <div class="path"></div>
+                    <div class="path"></div>
+                    <div class="path"></div>
+                </div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+            </div>
+
+            <div class="row">
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="path"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+                <div class="brick"></div>
+            </div>
+        </div>
+
+        <div id="runningman" style="display:none; transform:none;"></div>
+        <div id="Ghost1" class="Ghost" style="display:none"></div>
+        <div id="Ghost2" class="Ghost" style="display:none"></div>
+        <div id="Ghost3" class="Ghost" style="display:none"></div>
+        <div id="Ghost4" class="Ghost" style="display:none"></div>
+
+    </div>
+
+    <div id="scoreBox" style="display:none">
+
+        <button type="button" class="returnHomeButton" onclick="refreshPage()">RETURN HOME</button>
+
+        <br>
+        <br>
+        <br>
+        <p id="scoreTitle">COIN:</p>
+        <br>
+        <div id="score">176</div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="life1" style="display:inline-block"><img class="life" src="img/runningman.gif" alt="life"></div>
+        <div id="life2" style="display:inline-block"><img class="life" src="img/runningman.gif" alt="life"></div>
+        <div id="life3" style="display:inline-block"><img class="life" src="img/runningman.gif" alt="life"></div>
+        <h2 id="noLivesText" style="display:none">None!</h2>
+
+        <br>
+        <br>
+
+    </div>
+
+    <div id="introScreen" style="display:block">
+
+        <h1>Running Man</h1>
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="wrapper">
+            <a href="#" class="button" onclick="worldFunction()">PLAY NOW!</a>
+
+        </div>
+
+        <div class="runningmanPic" style="display:inline-block"></div>
+    </div>
+
+    <div id="youWinMessage">
+
+        <h1>YOU WIN!</h1>
+        <div class="coinPic" style="display:inline-block"></div>
+        <button type="button" class="playAgainButton1" onclick="refreshPage()">PLAY AGAIN</button>
+        <br><br><br><br>
+
+    </div>
+
+    <div id="gameOverMessage">
+
+        <h1>GAME OVER!</h1>
+        <h2 id="ghostsOrTimeMessage"></h2>
+        <div class="GhostPic" style="display:inline-block"></div>
+
+        <button type="button" class="playAgainButton" onclick="refreshPage()">PLAY AGAIN</button>
+        <br><br><br><br>
+
+
+    </div>
+
+    <!-- jQuery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+    <!-- 自己寫的js -->
+    <!-- <script src="./js/index.js"></script> -->
+
+</body>
+
+</html>
